@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Categories=Application
+Terminal=true
+Name=HelloAllxon
+Icon=/usr/share/allxon-dms-agent/hello_ota.png
+Exec=gnome-terminal --geometry=70x24 -- "/usr/share/allxon-dms-agent/allxon-ascii-pure.sh"
+
