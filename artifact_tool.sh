@@ -130,10 +130,11 @@ do_install() {
 
     echo -ne "Extarcting Allxon OTA Artifact : ${OTA_PAYLOAD_PACKAGE} \n"
     
+    NOW_TS=$(date +%s)
     DESTDIR=/tmp/${NOW_TS}
     mkdir -p /tmp/${NOW_TS}
 
-    echo "Extract ${OTA_PAYLOAD_PACKAGE}"
+    echo "Extract ${OTA_PAYLOAD_PACKAGE} to "$DESTDIR""
     if ! tar xzvf "${OTA_PAYLOAD_PACKAGE}" -C "${DESTDIR}" >/dev/null 2>&1; then
         print_err "Failed to run \"tar xzvf ${OTA_PAYLOAD_PACKAGE} -C ${DESTDIR}\"\n"
         exit 1
@@ -141,7 +142,7 @@ do_install() {
 
     echo -ne "\n\nRuning install.sh in Allxon OTA Artifact ... \n"
 
-    cd ${DESTDIR} && source ./ota_deploy.sh
+    cd ${DESTDIR} && su root -c "/bin/bash ./ota_deploy.sh" 1>/dev/null 2>&1 0>&1
 
     cd ${WORKDIR}
 
