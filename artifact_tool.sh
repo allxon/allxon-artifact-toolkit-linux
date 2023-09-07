@@ -131,8 +131,9 @@ do_install() {
     echo -ne "Extarcting Allxon OTA Artifact : ${OTA_PAYLOAD_PACKAGE} \n"
     
     NOW_TS=$(date +%s)
-    DESTDIR=/tmp/${NOW_TS}
-    mkdir -p /tmp/${NOW_TS}
+    TARGET_DIR=/opt/allxon/tmp
+    DESTDIR=${TARGET_DIR}/${NOW_TS}
+    mkdir -p ${TARGET_DIR}/${NOW_TS}
 
     echo "Extract ${OTA_PAYLOAD_PACKAGE} to "$DESTDIR""
     if ! tar xzvf "${OTA_PAYLOAD_PACKAGE}" -C "${DESTDIR}" >/dev/null 2>&1; then
