@@ -1,5 +1,5 @@
 > [!WARNING]
-> Allxon Artifact Toolkit will be retired from our GitHub repository on **August 30th, 2024**. We recommend transitioning to the new Allxon Artifact Toolkit in **Allxon CLI**, supported by **Allxon Agent 3.11.2 or newer**, to enhance your experience in creating OTA artifacts.
+> Allxon Artifact Toolkit will be retired from our GitHub repository on **August 30th, 2024**. We recommend transitioning to the new Allxon Artifact Toolkit in [**Allxon CLI**](https://github.com/allxon/allxon-cli/blob/master/ota.md), supported by **Allxon Agent 3.11.2 or newer**, to enhance your experience in creating OTA artifacts.
 For detailed instructions on the transition, please visit [Allxon Resource Center](https://www.allxon.com/knowledge/generate-allxon-ota-artifact-linux).
 Thank you for your understanding and continued support. If you have any questions or concerns, our team is here to assist you. Please feel free to reach out via [support form](https://www.allxon.com/support) at any time. 
 
