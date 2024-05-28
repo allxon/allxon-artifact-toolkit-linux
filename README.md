@@ -1,3 +1,8 @@
+> [!WARNING]
+> Allxon Artifact Toolkit will be retired from our GitHub repository on **August 30th, 2024**. We recommend transitioning to the new Allxon Artifact Toolkit in **Allxon CLI**, supported by **Allxon Agent 3.11.2 or newer**, to enhance your experience in creating OTA artifacts.
+For detailed instructions on the transition, please visit [Allxon Resource Center](https://www.allxon.com/knowledge/generate-allxon-ota-artifact-linux).
+Thank you for your understanding and continued support. If you have any questions or concerns, our team is here to assist you. Please feel free to reach out via [support form](https://www.allxon.com/support) at any time. 
+
 # What is Allxon Artifact Toolkit
 Allxon Artifact Toolkit is a simple yet powerful tool that packages all kinds of files into a unified format to support seamless operations during Allxon OTA deployment across a mass fleet of remote edge AI devices. Allxon Artifact Toolkit not only allows you to intuitively customize your OTA script and process, but it only requires four simple steps to complete artifact packaging. Whether you want to update docker image, firmware, BSP image, application file, software, script, image, video, etc., you can easily package it into an Allxon verified artifact that is readable by Allxon Portal, giving you a smoother user experience. 
 
@@ -25,19 +30,16 @@ allxon-artifact-toolkit-linux
 
 
 
-# Note
-
-By default, the architecuture of the artifact generated will be the same as the host architecture. (e.g. `x86`, `x86_64` or `aarch64`).
-
-* Specify the architecture for an artifact with `--arch` argument.
-`$sudo artifact_tool.sh --arch aarch64 –-package`
-   * List of supported architecture
-     * `x86`
-     * `x86_64`
-     * `aarch64`
-* Generate an artifact for all the supported architecture with `--arch all` 
-`$sudo artifact_tool.sh --arch all –-package`   
-   
+> [!NOTE]
+> By default, the architecuture of the artifact generated will be the same as the host architecture. (e.g. `x86`, `x86_64` or `aarch64`).
+> * Specify the architecture for an artifact with `--arch` argument.
+> `$sudo artifact_tool.sh --arch aarch64 –-package`
+>    * List of supported architecture
+>      * `x86`
+>      * `x86_64`
+>      * `aarch64`
+> * Generate an artifact for all the supported architecture with `--arch all` 
+> `$sudo artifact_tool.sh --arch all –-package` 
    
 # What is Next
 Once you have generated your Allxon Artifact Toolkit, head over to [Allxon Portal](https://dms.allxon.com/) to start performing OTA updates from the cloud portal to fleets of edge devices! 
